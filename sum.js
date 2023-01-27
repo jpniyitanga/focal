@@ -1,5 +1,5 @@
 
-
+/*
 // use slice method to remove the first two default arguments
 const args = process.argv.slice(2);
 // Initialize a variable sum
@@ -10,6 +10,14 @@ for (let i = 0; i < args.length; i++) {
 }
 
 console.log(sum)
+*/
+
+const args = process.argv.slice(2);
+//let total = 0;
+args.reduce((total, arg)=>{
+  return sum = Number(total) + Number(arg);
+});
+console.log(sum);
 
 
 
