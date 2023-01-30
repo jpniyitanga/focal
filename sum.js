@@ -7,11 +7,24 @@ const args = process.argv.slice(2);
 let sum = 0;
 
 // //Loop through the arguments, convert them to numbers and add them together
-for (let i = 0; i < args.length; i++) {
-  if (Number(args[i])) {
-    sum = sum + Number(args[i]);
+// for (let i = 0; i < args.length; i++) {
+//   if (Number(args[i])) {
+//     sum = sum + Number(args[i]);
+//   }
+// }
+
+for (let item of args) {
+  if (Number(item) ) {
+    sum += Number(item)
   }
 }
+
+
+
+
+
+
+
 
 console.log(sum);
 
